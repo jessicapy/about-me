@@ -2,7 +2,7 @@
 
 ## About me
 
-Contruí una página web “About me”, con un cuestionario para el usuario sobre datos curiosos y dándole información acerca de mi. 
+Contruí una página web “About me”, con un cuestionario para el usuario sobre datos curiosos y dándole información acerca de mi.
 
 Luego le hago preguntas al usuario de tipo sí o no.
 
@@ -10,8 +10,8 @@ Luego le hago preguntas al usuario de tipo sí o no.
 
 ### Enlaces y Recursos
 
-* https://entertechschool.github.io/code-201-guide/curriculum/class-02/README-template.html
-* (https://entertechschool.github.io/code-201-guide/curriculum/class-02/project-setup)
+* [Guia para Readme](https://entertechschool.github.io/code-201-guide/curriculum/class-02/README-template.html)
+* [Instrucciones del proyecto](https://entertechschool.github.io/code-201-guide/curriculum/class-02/project-setup)
 
 ### Puntuación de Accesibilidad de Lighthouse
 
