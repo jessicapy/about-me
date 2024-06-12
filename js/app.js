@@ -69,7 +69,7 @@ else {
      }
 
    // puntos += 1;
-
+//preguntas 6 y 7 del Lab03
 
 //Option 2
 /*const arregloTotal = [
