@@ -1,74 +1,135 @@
 "use strict";
 
-let nombre= prompt("Hola! Cuál es tu nombre?");
-        alert("Hola "+ nombre + "! Por favor contesta las siguientes preguntas:"); 
+let nombre = prompt("Hola! Cuál es tu nombre?");
+alert("Hola " + nombre + "! Por favor contesta las siguientes preguntas:");
 // Option 1:
 //1 Tengo segundo nombre?
-const respuesta1 ="No";
+const respuesta1 = "No";
 //2 Tengo un trabajo
-const respuesta2 ="Si";
+const respuesta2 = "Si";
 //3 Tengo una Maestria
-const respuesta3 ="Si";
+const respuesta3 = "Si";
 //4 Tengo un PHD
-const respuesta4 ="No";
+const respuesta4 = "No";
 //5 Trabajo en Google
-const respuesta5 ="No";
+const respuesta5 = "No";
 
 //1 case sensitive
-//let puntos =0;
+let puntos = 0;
 
 
-const pregunta1 = prompt("Tengo un segundo nombre?"); 
-if (respuesta1.toLowerCase()===pregunta1.toLowerCase()){
+const pregunta1 = prompt("Tengo un segundo nombre?");
+if (respuesta1.toLowerCase() === pregunta1.toLowerCase()) {
     alert("Muy bien!");
     //console.log("Muy bien!");
+    puntos++;
 }
 else {
-        alert("Respuesta incorrecta!");
-        //console.log("Respuesta incorrecta!");
-     }
+    alert("Respuesta incorrecta!");
+    //console.log("Respuesta incorrecta!");
+}
 
 const pregunta2 = prompt("Tengo un trabajo actualmente?");
-if (respuesta2.toLowerCase()===pregunta2.toLocaleLowerCase()){
+if (respuesta2.toLowerCase() === pregunta2.toLocaleLowerCase()) {
     alert("Muy bien!");
     //console.log("Muy bien!");
+    puntos++;
 }
 else {
-        alert("Respuesta incorrecta!");
-        //console.log("Respuesta incorrecta!");
-     }
+    alert("Respuesta incorrecta!");
+    //console.log("Respuesta incorrecta!");
+}
 
-const pregunta3 = prompt("Tengo una Maestria?"); 
-if (respuesta3.toLowerCase()===pregunta3.toLocaleLowerCase()){
+const pregunta3 = prompt("Tengo una Maestria?");
+if (respuesta3.toLowerCase() === pregunta3.toLocaleLowerCase()) {
     alert("Muy bien!");
     //console.log("Muy bien!");
+    puntos++;
 }
 else {
-        alert("Respuesta incorrecta!");
-        //console.log("Respuesta incorrecta!");
-     }
+    alert("Respuesta incorrecta!");
+    //console.log("Respuesta incorrecta!");
+}
 
-const pregunta4 = prompt("Tengo un PHD?"); 
-if (respuesta4.toLowerCase()===pregunta4.toLocaleLowerCase()){
+const pregunta4 = prompt("Tengo un PHD?");
+if (respuesta4.toLowerCase() === pregunta4.toLocaleLowerCase()) {
     alert("Muy bien!");
     //console.log("Muy bien!");
+    puntos++;
 }
 else {
-        alert("Respuesta incorrecta!");
-        //console.log("Respuesta incorrecta!");
-     }
+    alert("Respuesta incorrecta!");
+    //console.log("Respuesta incorrecta!");
+}
 
 const pregunta5 = prompt("Trabajo en Google?");
-if (respuesta5.toLowerCase()===pregunta5.toLocaleLowerCase()){
+if (respuesta5.toLowerCase() === pregunta5.toLocaleLowerCase()) {
     alert("Muy bien!");
     //console.log("Muy bien!");
+    puntos++;
 }
 else {
-        alert("Respuesta incorrecta!");
-        //console.log("Respuesta incorrecta!");
-     }
+    alert("Respuesta incorrecta!");
+    //console.log("Respuesta incorrecta!");
+}
 
-   // puntos += 1;
+const maxIntentos = 4;
+//6 En qué año terminé mi licenciatura
+const respuesta6 = 2010;
+let counter = 1;
+
+while (counter <= maxIntentos) {
+
+    const pregunta6 = Number(prompt("Adivina en qué año terminé mi licenciatura? Tienes 4 intentos"));
+    if (respuesta6 === pregunta6) {
+        alert("Respuesta correcta!");
+        puntos++;
+        break;
+    } else {
+        counter++;
+        if (counter === maxIntentos + 1) {
+            alert("Se acabaron tus intentos. El año correcto era "
+                + respuesta6);
+        } else {
+            if (respuesta6 > pregunta6) {
+                alert("Ese número es muy bajo!");
+                //console.log("");
+            } else if (respuesta6 < pregunta6) {
+                alert("Ese número es muy alto!");
+                //console.log("!");
+            }
+        }
+    }
+}
+
+
+//7 Menciona un país en el que you haya vivido
+const respuesta7 = ["Peru", "Japón", "Francia", "Alemania", "USA"];
+
+
+for (let i = 0; i < 6; i++) {
+    let pregunta7 = prompt("Menciona uno de los países en los que he vivido. Tienes 6 intentos!");
+    if (pregunta7.toLowerCase === respuesta7[i].toLowerCase) {
+        alert("Respuesta correcta!");
+        puntos++;
+        break;
+    } else {
+        alert("Sigue intentando");
+    }
+    if (i === 5) {
+        alert("Se acabaron tus intentos.");
+    }
+}
+
+alert("Tuviste " + puntos + " respuesta(s) correcta(s). Las respuestas correctas eran: ");
+for (let j = 0; j < 5; j++) {
+    alert(respuesta7[j]);
+}
+
+
+
+
+// puntos += 1;
 //preguntas 6 y 7 del Lab03
 
 //Option 2
