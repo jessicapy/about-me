@@ -2,7 +2,7 @@
 
 let nombre = prompt("Hola! Cuál es tu nombre?");
 let counter = 1;
-let puntos =0;
+let puntos = 0;
 let respuestasCorrectas = "";
 
 alert("Hola " + nombre + "! Por favor contesta las siguientes preguntas:");
@@ -32,15 +32,15 @@ const respuestaNegativa = "No";
 
 function segundoNombre() {
     const pregunta1 = prompt("Tengo un segundo nombre?");
- if (respuestaNegativa.toLowerCase() === pregunta1.toLowerCase()) {
-    alert("Muy bien!");
-    //console.log("Muy bien!");
-    puntos++;
- }
- else {
-    alert("Respuesta incorrecta!");
-    //console.log("Respuesta incorrecta!");
- }
+    if (respuestaNegativa.toLowerCase() === pregunta1.toLowerCase()) {
+        alert("Muy bien!");
+        //console.log("Muy bien!");
+        puntos++;
+    }
+    else {
+        alert("Respuesta incorrecta!");
+        //console.log("Respuesta incorrecta!");
+    }
 
 }
 
@@ -129,19 +129,19 @@ const respuesta7 = ["Peru", "Japon", "Francia", "Alemania", "USA"];
 
 for (let i = 0; i < 6; i++) {
     let pregunta7 = prompt("Menciona uno de los países en los que he vivido. Tienes 6 intentos!");
-    for(let j=0;j<respuesta7.length;i++){
+    for (let j = 0; j < respuesta7.length; i++) {
         if (pregunta7.toLowerCase() === respuesta7[j].toLowerCase()) {
             alert("Respuesta correcta!");
             puntos++;
-            alert("Tuviste "+ puntos + " respuesta(s) correcta(s)!");
+            alert("Tuviste " + puntos + " respuesta(s) correcta(s)!");
             break;
         }
     }
     if (i === 5) {
-        alert("Se acabaron tus intentos. las respuesta correctas son "+ respuesta7[0]+' '+respuesta7[1]);
-    }else {
-       alert("Sigue intentando");
-   }
+        alert("Se acabaron tus intentos. las respuesta correctas son " + respuesta7[0] + ' ' + respuesta7[1]);
+    } else {
+        alert("Sigue intentando");
+    }
 }
 
 /*
@@ -183,3 +183,4 @@ for (let i=0; i<arregloTotal.length;i++){
     const respuesta = prompt(arregloTotal[i][1]);
 }
 */
+//...
