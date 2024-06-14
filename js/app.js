@@ -7,34 +7,48 @@ let respuestasCorrectas = "";
 
 alert("Hola " + nombre + "! Por favor contesta las siguientes preguntas:");
 // Option 1:
+//Aplicar Funciones.
+const respuestaAfirmativa = "Si";
+const respuestaNegativa = "No";
+
+
+
+
 //1 Tengo segundo nombre?
-const respuesta1 = "No";
+//const respuesta1 = "No";
 //2 Tengo un trabajo
-const respuesta2 = "Si";
+//const respuesta2 = "Si";
 //3 Tengo una Maestria
-const respuesta3 = "Si";
+//const respuesta3 = "Si";
 //4 Tengo un PHD
-const respuesta4 = "No";
+//const respuesta4 = "No";
 //5 Trabajo en Google
-const respuesta5 = "No";
+//const respuesta5 = "No";
 
 //1 case sensitive
 
 
+//Reducir a Funciones.
 
-const pregunta1 = prompt("Tengo un segundo nombre?");
-if (respuesta1.toLowerCase() === pregunta1.toLowerCase()) {
+function segundoNombre() {
+    const pregunta1 = prompt("Tengo un segundo nombre?");
+ if (respuestaNegativa.toLowerCase() === pregunta1.toLowerCase()) {
     alert("Muy bien!");
     //console.log("Muy bien!");
     puntos++;
-}
-else {
+ }
+ else {
     alert("Respuesta incorrecta!");
     //console.log("Respuesta incorrecta!");
+ }
+
 }
 
+segundoNombre();
+
+
 const pregunta2 = prompt("Tengo un trabajo actualmente?");
-if (respuesta2.toLowerCase() === pregunta2.toLocaleLowerCase()) {
+if (respuestaAfirmativa.toLowerCase() === pregunta2.toLocaleLowerCase()) {
     alert("Muy bien!");
     //console.log("Muy bien!");
     puntos++;
@@ -45,7 +59,7 @@ else {
 }
 
 const pregunta3 = prompt("Tengo una Maestria?");
-if (respuesta3.toLowerCase() === pregunta3.toLocaleLowerCase()) {
+if (respuestaAfirmativa.toLowerCase() === pregunta3.toLocaleLowerCase()) {
     alert("Muy bien!");
     //console.log("Muy bien!");
     puntos++;
@@ -56,7 +70,7 @@ else {
 }
 
 const pregunta4 = prompt("Tengo un PHD?");
-if (respuesta4.toLowerCase() === pregunta4.toLocaleLowerCase()) {
+if (respuestaNegativa.toLowerCase() === pregunta4.toLocaleLowerCase()) {
     alert("Muy bien!");
     //console.log("Muy bien!");
     puntos++;
@@ -67,7 +81,7 @@ else {
 }
 
 const pregunta5 = prompt("Trabajo en Google?");
-if (respuesta5.toLowerCase() === pregunta5.toLocaleLowerCase()) {
+if (respuestaNegativa.toLowerCase() === pregunta5.toLocaleLowerCase()) {
     alert("Muy bien!");
     //console.log("Muy bien!");
     puntos++;
@@ -76,6 +90,10 @@ else {
     alert("Respuesta incorrecta!");
     //console.log("Respuesta incorrecta!");
 }
+
+
+
+
 
 const maxIntentos = 4;
 //6 En qué año terminé mi licenciatura
@@ -111,17 +129,19 @@ const respuesta7 = ["Peru", "Japon", "Francia", "Alemania", "USA"];
 
 for (let i = 0; i < 6; i++) {
     let pregunta7 = prompt("Menciona uno de los países en los que he vivido. Tienes 6 intentos!");
-    if (pregunta7.toLowerCase() === respuesta7[i].toLowerCase()) {
-        alert("Respuesta correcta!");
-        puntos++;
-        alert("Tuviste "+ puntos + " respuesta(s) correcta(s)!");
-        break;
-    } else {
-        alert("Sigue intentando");
+    for(let j=0;j<respuesta7.length;i++){
+        if (pregunta7.toLowerCase() === respuesta7[j].toLowerCase()) {
+            alert("Respuesta correcta!");
+            puntos++;
+            alert("Tuviste "+ puntos + " respuesta(s) correcta(s)!");
+            break;
+        }
     }
     if (i === 5) {
-        alert("Se acabaron tus intentos.");
-    }
+        alert("Se acabaron tus intentos. las respuesta correctas son "+ respuesta7[0]+' '+respuesta7[1]);
+    }else {
+       alert("Sigue intentando");
+   }
 }
 
 /*
