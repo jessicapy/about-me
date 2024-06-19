@@ -2,6 +2,7 @@
 let nombre = prompt("Hola! Cuál es tu nombre?");
 let counter = 1;
 let puntos = 0;
+let intentos = 0;
 let respuestasCorrectas = "";
 let condition = false;
 
@@ -98,16 +99,18 @@ while (counter <= maxIntentos) {
 const respuesta7 = ["Peru", "Japon", "Francia", "Alemania", "USA"];
 for (let i = 0; i < 6; i++) {
     let pregunta7 = prompt("Menciona uno de los países en los que he vivido. Tienes 6 intentos!");
-    puntos++;
+    intentos++;
     for (let j = 0; j < respuesta7.length; j++) {
         if (pregunta7.toLowerCase() === respuesta7[j].toLowerCase()) {
-            alert("Respuesta correcta!");
+            alert("Respuesta correcta! Adivinaste en el país en "+intentos+ " intento(s)");
             condition = true;
+            puntos++;
             break;
+            
         }
     }
     if (condition) {
-        alert("Buen trabajo! Tienes en total " + puntos + " puntos");
+        alert("Acumulaste en total " + puntos + " punto(s) con todas tus respuestas correctas");
         break;
     }
     else if (puntos === 5) {
