@@ -102,7 +102,7 @@ for (let i = 0; i < 6; i++) {
     intentos++;
     for (let j = 0; j < respuesta7.length; j++) {
         if (pregunta7.toLowerCase() === respuesta7[j].toLowerCase()) {
-            alert("Respuesta correcta! Adivinaste en el país en "+intentos+ " intento(s)");
+            alert("Respuesta correcta! Adivinaste el país en "+intentos+ " intento(s)");
             condition = true;
             puntos++;
             break;
