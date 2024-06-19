@@ -17,7 +17,7 @@ Luego le hago preguntas al usuario de tipo sí o no.
 
 * ![Puntuación de accesibilidad Lighthouse en Laboratorio #2](./img/lighthouse-lab02.jpg)
 
-* ![Puntuación de accesibilidad Lighthouse en Laboratorio #5](./img/lighthouse-lab05.jpg)
+* ![Puntuación de accesibilidad Lighthouse en Laboratorio #5](./img/lighthouse-lab05.JPG)
 
 ### Reflexiones y Comentarios
 
